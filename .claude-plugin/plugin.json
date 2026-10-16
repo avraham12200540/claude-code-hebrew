@@ -1,0 +1,55 @@
+{
+  "name": "hebrew-rtl",
+  "version": "1.0.0",
+  "description": "Claude Code בעברית מלאה: תשובות, מחשבות, תיאורי פעולות ורשימות משימות בעברית, ותצוגה שנראית טוב מימין לשמאל",
+  "author": {
+    "name": "avraham12200540"
+  },
+  "repository": "https://github.com/avraham12200540/claude-code-hebrew",
+  "license": "MIT",
+  "keywords": [
+    "hebrew",
+    "rtl",
+    "עברית",
+    "language",
+    "i18n"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "enforce": {
+      "type": "boolean",
+      "title": "חסימת פעולות באנגלית",
+      "description": "כשטקסט של פעולה שמוצגת לך (תיאור של פקודה, workflow, רשימת המשימות, שאלה, סיכום) נכתב באנגלית, הפעולה נעצרת ו-Claude מתבקש לכתוב אותו מחדש בעברית. כל טקסט נעצר פעם אחת בלבד.",
+      "default": true
+    },
+    "stopCheck": {
+      "type": "boolean",
+      "title": "בדיקה בסוף כל תור",
+      "description": "אם Claude כתב לך משפטים באנגלית במהלך התור, הוא מתבקש פעם אחת לכתוב אותם מחדש בעברית. קוד, ציטוטים וטבלאות לא נספרים, ותור שבו ביקשת אנגלית או תרגום לא נבדק.",
+      "default": true
+    },
+    "reminders": {
+      "type": "boolean",
+      "title": "תזכורות",
+      "description": "תזכורת קצרה בכל הודעה שלך, ואחרי כלי שהפלט שלו ארוך ובאנגלית.",
+      "default": true
+    },
+    "rtlDisplay": {
+      "type": "boolean",
+      "title": "תצוגה מימין לשמאל",
+      "description": "מוסיף תווי כיווניות בלתי נראים (RLM) לשורות בעברית בתצוגה בלבד, כדי שכל שורה תוצג מימין לשמאל והפיסוק יופיע במקום. ההודעה השמורה לא משתנה.",
+      "default": true
+    },
+    "codeComments": {
+      "type": "string",
+      "title": "הערות בקוד",
+      "description": "match: עברית בקבצים חדשים ובקבצים שההערות בהם בעברית, ואנגלית בקבצים שההערות בהם באנגלית. hebrew: תמיד עברית. english: תמיד אנגלית.",
+      "default": "match",
+      "options": [
+        "match",
+        "hebrew",
+        "english"
+      ]
+    }
+  }
+}

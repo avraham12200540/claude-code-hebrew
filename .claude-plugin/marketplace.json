@@ -1,0 +1,14 @@
+{
+  "name": "claude-code-hebrew",
+  "owner": { "name": "avraham12200540" },
+  "metadata": {
+    "description": "עברית מלאה ותצוגה מימין לשמאל ל-Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "hebrew-rtl",
+      "source": "./",
+      "description": "Claude Code בעברית מלאה: תשובות, מחשבות, תיאורי פעולות ורשימות משימות בעברית, ותצוגה שנראית טוב מימין לשמאל"
+    }
+  ]
+}
